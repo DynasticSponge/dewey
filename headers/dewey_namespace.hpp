@@ -21,6 +21,4 @@ namespace dewey
     class DatabaseResult;   
 };
 
-typedef std::vector<std::string> strVector;
-
 #endif

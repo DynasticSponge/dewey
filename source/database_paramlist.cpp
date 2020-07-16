@@ -62,18 +62,7 @@ void dewey::DatabaseParamList::addParam(const std::string& value, int type, bool
 
 void dewey::DatabaseParamList::addParam(const std::string& value, bool binary)
 {
-    this->numParams++;
-    this->paramTypes.push_back(static_cast<Oid>(0));
-    this->paramLengths.push_back(value.size());
-    if(binary){
-        this->paramFormats.push_back(1);
-        this->paramValues.push_back(&(value[0]));
-    }
-    else
-    {
-        this->paramFormats.push_back(0);
-        this->paramValues.push_back(value.c_str());
-    }   
+    this->addParam(value, 0, binary);
     return;
 }
 
