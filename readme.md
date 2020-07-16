@@ -1,7 +1,10 @@
 # dewey
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c8e416ba58f7493d851d902f3fc08396)](https://www.codacy.com/manual/joseph.adomatis/dewey?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=DynasticSponge/dewey&amp;utm_campaign=Badge_Grade)
 
-frederick2 is a C++ Library for accessing PostgreSQL utilizing its libpq C libraries.
+dewey is a C++ library for accessing PostgreSQL.
+
+***NOTE:  dewey utilizes/wraps the libpq C library but is not intended to be a full wrapper.
+dewey is for accessing PostgreSQL the way I want to interface with it... not another attempt to port libpq fully to C++
 
 ## Stage/Release
 
