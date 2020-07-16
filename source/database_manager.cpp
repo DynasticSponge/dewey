@@ -108,12 +108,13 @@ std::string dewey::DatabaseManager::getConnectionString()
 
 dewey::DatabaseConnection* dewey::DatabaseManager::getConnection()
 {
-    dewey::DatabaseConnection* returnPtr{nullptr};
-    PGconn *connPtr{nullptr};
+    dewey::DatabaseConnection* returnPtr{nullptr};    
     
     this->connectedMutex.lock();
     if(this->connected){
         this->connectedMutex.unlock();
+
+        PGconn *connPtr{nullptr};
         if(this->connections < 0)
         {   
             while(connPtr == nullptr)
