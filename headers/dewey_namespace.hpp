@@ -10,9 +10,6 @@
 #ifndef DEWEY_NAMESPACE_HPP
 #define DEWEY_NAMESPACE_HPP
 
-#include <string>
-#include <vector>
-
 namespace dewey
 {
     class DatabaseConnection;

@@ -10,7 +10,7 @@
 #ifndef DATABASE_RESULT_HPP
 #define DATABASE_RESULT_HPP
 
-#include <libpq-fe.h>
+#include <postgresql/libpq-fe.h>
 #include <string>
 
 #include "dewey_namespace.hpp"

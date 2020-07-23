@@ -7,17 +7,12 @@
 //
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+#include <dewey/dewey.hpp>
 #include <iostream>
-#include <libpq-fe.h>
 #include <memory>
+#include <postgresql/libpq-fe.h>
 #include <string>
 #include <vector>
-
-#include "../headers/dewey_namespace.hpp"
-#include "../headers/database_manager.hpp"
-#include "../headers/database_connection.hpp"
-#include "../headers/database_paramlist.hpp"
-#include "../headers/database_result.hpp"
 
 using namespace dewey;
 

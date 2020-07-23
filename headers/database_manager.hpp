@@ -12,7 +12,7 @@
 
 #include <map>
 #include <mutex>
-#include <libpq-fe.h>
+#include <postgresql/libpq-fe.h>
 #include <string>
 #include <vector>
 

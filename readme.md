@@ -27,15 +27,10 @@ Copy the 'headers' folder and libdewey.a library file to the appropriate locatio
 
 ```c++
 #include <cstdlib>
+#include <dewey/dewey.hpp>
 #include <iostream>
 #include <memory>
 #include <string>
-
-#include "dewey/dewey_namespace.hpp"
-#include "dewey/database_manager.hpp"
-#include "dewey/database_connection.hpp"
-#include "dewey/database_paramlist.hpp"
-#include "dewey/database_result.hpp"
 
 int main(int argc, char *argv[])
 {

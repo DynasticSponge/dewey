@@ -10,8 +10,9 @@
 #ifndef DATABASE_CONNECTION_HPP
 #define DATABASE_CONNECTION_HPP
 
-#include <libpq-fe.h>
 #include <memory>
+#include <postgresql/libpq-fe.h>
+
 #include "dewey_namespace.hpp"
 #include "database_result.hpp"
 

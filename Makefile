@@ -11,11 +11,11 @@ STATICS = $(wildcard ${STATICSDIR}*.a)
 LIBRARIES = -lpq -lpthread
 
 compile: ${SOURCES}
-	$(CXX) -std=c++17 -c ${SOURCES} -I ${HEADERDIR} -I /usr/include/postgresql
+	$(CXX) -std=c++17 -c ${SOURCES} -I ${HEADERDIR}
 	mv ${STARTDIR}*.o ${OBJECTDIR}
 
 dcompile: ${SOURCES}
-	$(CXX) -std=c++17 -ggdb -c ${SOURCES} -I ${HEADERDIR} -I /usr/include/postgresql
+	$(CXX) -std=c++17 -ggdb -c ${SOURCES} -I ${HEADERDIR}
 	mv ${STARTDIR}*.o ${OBJECTDIR}
 
 link: ${OBJECTS}

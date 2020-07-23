@@ -10,7 +10,9 @@
 #ifndef DATABASE_PARAMLIST_HPP
 #define DATABASE_PARAMLIST_HPP
 
-#include <libpq-fe.h>
+#include <postgresql/libpq-fe.h>
+#include <string>
+#include <vector>
 
 #include "dewey_namespace.hpp"
 
